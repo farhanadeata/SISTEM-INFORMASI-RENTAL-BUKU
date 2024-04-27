@@ -25,5 +25,7 @@
 <h2>DFD</h2>
 <br>
 ![image](https://github.com/farhanadeata/proyek-laravel/assets/100106630/0991fb53-59b7-47aa-b069-890b8ff309b2)
+<br>
+nama database " rental_buku " (samakan)
 
 
