@@ -27,5 +27,12 @@
 ![image](https://github.com/farhanadeata/proyek-laravel/assets/100106630/0991fb53-59b7-47aa-b069-890b8ff309b2)
 <br>
 nama database " rental_buku " (samakan)
-
+<br>
+<h1>
+1.membuat database (done)
+<br>
+2. membuat relasi (done)
+<br>
+3. membuat db seeder (waiting (farhan))
+</h1>
 
