@@ -1,4 +1,4 @@
-<h1>SISTEM INFORMASI RENTAL BUKU</h1>
+<h1>SISTEM INFORMASI RENTAL BUKU (sewa buku perpustakaan)</h1>
 <br>
 1. ada 2 jenis role (user) : admin,penyewa
 <br>
