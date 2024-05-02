@@ -33,6 +33,6 @@ nama database " rental_buku " (samakan)
 <br>
 2. membuat relasi (done)
 <br>
-3. membuat db seeder (waiting (farhan))
+3. membuat db seeder (Done)
 </h1>
 
