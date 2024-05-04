@@ -35,6 +35,6 @@ nama database " rental_buku " (samakan)
 <br>
 3. membuat db seeder (Done) maulidan
 <br>
-4. uegfhweg
+4. uegfhweg hjfygdhhjc
 </h1>
 
