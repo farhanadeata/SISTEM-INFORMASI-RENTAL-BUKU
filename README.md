@@ -34,5 +34,7 @@ nama database " rental_buku " (samakan)
 2. membuat relasi (done)
 <br>
 3. membuat db seeder (Done) maulidan
+<br>
+4.
 </h1>
 
