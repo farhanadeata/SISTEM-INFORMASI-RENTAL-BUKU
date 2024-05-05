@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class AuthController extends Controller
 {
@@ -47,12 +48,12 @@ class AuthController extends Controller
             // return redirect();
         }
 
-        Session::flash('status', 'Failed');
+        Session::flash('status', 'Gagal');
         Session::flash('massage', 'gagal login');
         return redirect('/login');
     }
 
-    public function logout(Request $request)
+    public function logout(Request $request): RedirectResponse
     {
         Auth::logout();
         $request->session()->invalidate();
