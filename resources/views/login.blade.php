@@ -61,9 +61,10 @@
                         </div>
 
                         <!-- Submit button -->
+                        <div class="d-grid gap-2">
                         <button type="submit" data-mdb-button-init data-mdb-ripple-init
                             class="btn btn-success btn-lg btn-block">Sign in</button>
-
+                        </div>
 
 
                     </form>
