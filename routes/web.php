@@ -8,9 +8,11 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// })->middleware('auth');
+Route::get('/', function () {
+    return view('welcome');
+})->middleware('auth');
+
+
 
 Route::middleware('only_guest')->group(function () {
     Route::get('login', [AuthController::class, 'login'])->name('login');
