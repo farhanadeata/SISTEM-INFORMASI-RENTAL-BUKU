@@ -32,24 +32,59 @@
                         <h3 class="mt-1 mb-2 pb-1">Sign Up</h3>
                         <h4 class="mt-1 mb-5 pb-1">silahkan lakukan pembuatan Akun</h4>
                     </div>
+
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if (session('status'))
+                        <div class="alert alert-success text-center">
+                            {{ session('massage') }}
+                        </div>
+                    @endif
+
                     <form action="" method="POST">
                         @csrf
                         <!-- Email input -->
                         <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="text" id="u_name" name="u_name" class="form-control form-control-lg" />
+                            <input type="text" id="u_name" name="u_name" class="form-control form-control-lg"
+                                required />
                             <label class="form-label">Username</label>
                         </div>
 
                         <!-- Password input -->
                         <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="password" id="password" name="password"
-                                class="form-control form-control-lg" />
+                            <input type="password" id="password" name="password" class="form-control form-control-lg"
+                                required />
                             <label class="form-label">Password</label>
                         </div>
 
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="text" id="phone" name="phone" class="form-control form-control-lg" />
+                            <label class="form-label">Phone</label>
+                        </div>
+
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <textarea name="address" id="address" class="form-control form-control-lg" rows="3" required></textarea>
+                            <label class="form-label">Address</label>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-baseline mb-4">
+                            <!-- Checkbox -->
+                            <a href="login" class="text-success">Sudah mempunyai akun?</a>
+                        </div>
                         <!-- Submit button -->
-                        <button type="submit" data-mdb-button-init data-mdb-ripple-init
-                            class="btn btn-success btn-lg btn-block">Sign in</button>
+                        <div class="d-grid gap-2">
+                            <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                                class="btn btn-success btn-lg btn-block">Register</button>
+                            {{-- <a href="" class="btn btn-success btn-lg btn-block">Login</a> --}}
+                        </div>
 
                     </form>
                 </div>

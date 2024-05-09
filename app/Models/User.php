@@ -17,9 +17,10 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
+        'u_name',
         'password',
+        'phone',
+        'address',
     ];
 
     /**
@@ -44,4 +45,8 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    protected $attributes = [
+        'role_id' => 2
+    ];
 }
