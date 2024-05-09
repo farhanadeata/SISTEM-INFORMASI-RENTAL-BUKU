@@ -9,8 +9,6 @@ class UserController extends Controller
 {
     public function profile()
     {
-
-
-        dd(Auth::user());
+        return view('profile');
     }
 }
