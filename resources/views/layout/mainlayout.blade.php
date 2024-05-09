@@ -24,6 +24,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
             </div>
         </nav>
 
@@ -32,12 +33,17 @@
                 <div class="sidebar col-lg-2 collapse d-lg-block" id="navbarSupportedContent">
 
                     @if (Auth::user()->role_id == 1)
-                        <a href="dashboard" @if (request()->route()->uri == 'dashboard') class='active' @endif>Dashboard</a>
-                        <a href="books" @if (request()->route()->uri == 'books') class='active' @endif>Books</a>
-                        <a href="categories" @if (request()->route()->uri == 'categories') class='active' @endif>Categories</a>
-                        <a href="users" @if (request()->route()->uri == 'user') class='active' @endif>Users</a>
-                        <a href="log" @if (request()->route()->uri == 'log') class='active' @endif>Rent Log</a>
-                        <a href="logout">Logout</a>
+                        <a href="dashboard" @if (request()->route()->uri == 'dashboard') class='active' @endif><i
+                                class="bi bi-speedometer"></i> Dashboard</a>
+                        <a href="books" @if (request()->route()->uri == 'books') class='active' @endif><i
+                                class="bi bi-journal"></i> Books</a>
+                        <a href="categories" @if (request()->route()->uri == 'categories') class='active' @endif><i
+                                class="bi bi-list-task"></i> Categories</a>
+                        <a href="users" @if (request()->route()->uri == 'user') class='active' @endif><i
+                                class="bi bi-people-fill"></i> Users</a>
+                        <a href="log" @if (request()->route()->uri == 'log') class='active' @endif><i
+                                class="bi bi-archive"></i> Rent Log</a>
+                        <a href="logout"><i class="bi bi-box-arrow-left"></i> Logout</a>
                     @else
                         <a href="profile"@if (request()->route()->uri == 'profile') class='active' @endif>Profile</a>
                         <a href="logout">Logout</a>
