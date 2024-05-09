@@ -11,7 +11,7 @@
         <a href="category-add" class="btn btn-primary">add data</a>
 
         </div>
-        <div class="my-5" >
+        <div class="my-5">
 
         <table class="table">
             <thead>
