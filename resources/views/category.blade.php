@@ -38,12 +38,12 @@
 
                         <td>{{ $item->name }}</td>
 
-                        <td><a href="#">edit</a>
-                            <a href="#">delete</a>
+                        <td><a href="category-edit/{{$item->slug}}"><i class="fa-solid fa-wrench"></i></a>
+                            <a href="category-delete/{{$item->slug}}"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                 @endforeach
-            </tbody>
+                </tbody>
         </table>
     </div>
 @endsection

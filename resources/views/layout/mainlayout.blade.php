@@ -37,7 +37,7 @@
                                 class="bi bi-speedometer"></i> Dashboard</a>
                         <a href="books" @if (request()->route()->uri == 'books') class='active' @endif><i
                                 class="bi bi-journal"></i> Books</a>
-                        <a href="categories" @if (request()->route()->uri == 'categories') class='active' @endif><i
+                        <a href="categories" @if (request()->route()->uri == 'categories' || request()->route()->uri == 'category-add' || request()->route()->uri == 'category-edit' || request()->route()->uri == 'category-delete') class='active' @endif><i
                                 class="bi bi-list-task"></i> Categories</a>
                         <a href="users" @if (request()->route()->uri == 'user') class='active' @endif><i
                                 class="bi bi-people-fill"></i> Users</a>
