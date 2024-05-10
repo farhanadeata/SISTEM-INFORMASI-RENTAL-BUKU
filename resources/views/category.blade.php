@@ -28,22 +28,22 @@
                     <th>NO.</th>
                     <th>Name</th>
                     <th>Action</th>
-                 </tr>
+                </tr>
             </thead>
 
             <tbody>
-            @foreach ($categories as $item)
-            <tr>
-                <td>{{ $loop->iteration }}</td>
+                @foreach ($categories as $item)
+                    <tr>
+                        <td>{{ $loop->iteration }}</td>
 
-                <td>{{ $item->name }}</td>
-                
-                <td><a href="#">edit</a>
-                <a href="#">delete</a>
-            </td>
-            </tr>
-            @endforeach
+                        <td>{{ $item->name }}</td>
+
+                        <td><a href="#">edit</a>
+                            <a href="#">delete</a>
+                        </td>
+                    </tr>
+                @endforeach
             </tbody>
         </table>
-        </div>
+    </div>
 @endsection
