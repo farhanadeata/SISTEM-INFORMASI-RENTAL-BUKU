@@ -12,4 +12,18 @@ class CategoryController extends Controller
         $categories = category :: ALL();
         return view('category', ['categories' => $categories]);
     }
+
+    public function add()
+    {
+        return view('category-add');
+    }
+
+    public function store(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|unique:categories|max:100',
+        ]);
+        $category = Category::create($request->all());
+        return redirect('categories')->with('status', 'category add successfully');
+    }
 }
