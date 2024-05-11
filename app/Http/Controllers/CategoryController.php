@@ -9,7 +9,7 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        $categories = category :: ALL();
+        $categories = category::ALL();
         return view('category', ['categories' => $categories]);
     }
 
@@ -29,7 +29,7 @@ class CategoryController extends Controller
 
     public function edit($slug)
     {
-        $category = category:: where('slug', $slug)->first();
+        $category = category::where('slug', $slug)->first();
         return view('category-edit', ['category' => $category]);
     }
 
@@ -39,21 +39,21 @@ class CategoryController extends Controller
             'name' => 'required|unique:categories|max:100',
         ]);
 
-        $category = category:: where('slug', $slug)->first();
-        $category -> slug = null;
+        $category = category::where('slug', $slug)->first();
+        $category->slug = null;
         $category = Category::create($request->all());
         return redirect('categories')->with('status', 'category updated successfully');
     }
 
     public function delete($slug)
     {
-        $category = category:: where('slug', $slug)->first();
+        $category = category::where('slug', $slug)->first();
         return view('category-delete', ['category' => $category]);
     }
 
     public function destroy($slug)
     {
-        $category = category:: where('slug', $slug)->first();
+        $category = category::where('slug', $slug)->first();
         $category->delete();
         return redirect('categories')->with('status', 'category deleted successfully');
     }

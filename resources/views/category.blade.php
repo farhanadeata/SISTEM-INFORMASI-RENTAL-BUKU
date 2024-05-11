@@ -4,25 +4,23 @@
 
 @section('content')
 
-        <h1> Category list </h1>
+    <h1> Category list </h1>
 
-        <div>
-            @if (session('status'))
+    <div>
+        @if (session('status'))
             <div class="alert alert-success">
                 {{ session('status') }}
             </div>
-            
         @endif
-        </div>
+    </div>
 
-        <div class="mt-5 d-flex justify-content-start">
+    <div class="mt-5 d-flex justify-content-start">
         <a href="category-add" class="btn btn-primary fa-plus btn-lg">add data</a>
-        </div>
+    </div>
 
 
-        <div class="my-5">
-
-            <table class="table table-info table-striped table-hover">
+    <div class="my-5">
+        <table class="table table-info table-striped table-hover">
             <thead>
                 <tr>
                     <th>NO.</th>
@@ -38,12 +36,13 @@
 
                         <td>{{ $item->name }}</td>
 
-                        <td><a href="category-edit/{{$item->slug}}"><i class="fa-solid fa-wrench"></i></a>
-                            <a href="category-delete/{{$item->slug}}"><i class="fa-solid fa-trash"></i></a>
+                        <td>
+                            <a href="category-edit/{{ $item->slug }}"><i class="fa-solid fa-wrench"></i></a>
+                            <a href="category-delete/{{ $item->slug }}"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                 @endforeach
-                </tbody>
+            </tbody>
         </table>
     </div>
 @endsection
