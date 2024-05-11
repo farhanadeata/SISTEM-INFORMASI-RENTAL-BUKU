@@ -23,7 +23,6 @@
                     @csrf
 
                     <div>
-
                         <label for="name" class="form=lable">Name</label>
                         <input type="text" name="name" id="name" class="form-control" placeholder="Category Name">
                     </div>

@@ -45,7 +45,10 @@
                                 request()->route()->uri == 'category-edit' ||
                                 request()->route()->uri == 'category-delete') class='active' @endif><i
                                 class="bi bi-list-task"></i> Categories</a>
-                        <a href="/users" @if (request()->route()->uri == 'user') class='active' @endif><i
+                        <a href="/users" @if (request()->route()->uri == 'users' ||
+                                request()->route()->uri == 'registered-users' ||
+                                request()->route()->uri == 'users-detail/{slug}' ||
+                                request()->route()->uri == 'user-delete/{slug}') class='active' @endif><i
                                 class="bi bi-people-fill"></i> Users</a>
                         <a href="/log" @if (request()->route()->uri == 'log') class='active' @endif><i
                                 class="bi bi-archive"></i> Rent Log</a>

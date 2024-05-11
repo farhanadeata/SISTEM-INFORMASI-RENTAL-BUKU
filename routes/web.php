@@ -48,5 +48,11 @@ Route::middleware('auth')->group(function () {
     Route::get('category-destroy/{slug}', [CategoryController::class, 'destroy']);
 
     Route::get('users', [userController::class, 'index']);
+    Route::get('registered-users', [userController::class, 'registeredUser']);
+    Route::get('users-detail/{slug}', [userController::class, 'show']);
+    Route::get('user-approve/{slug}', [userController::class, 'approve']);
+    Route::get('user-delete/{slug}', [userController::class, 'delete']);
+    Route::get('user-destroy/{slug}', [userController::class, 'destroy']);
+
     Route::get('log', [LogController::class, 'index']);
 });
