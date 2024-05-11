@@ -35,5 +35,13 @@ nama database " rental_buku " (samakan)
 <br>
 3. membuat db seeder (Done) 
 <br>
+4. login register (Done) 
+<br>
+5. hal dasbord (Done) 
+<br>
+6. hal category (Done) 
+<br>
+7. hal book (Done) 
+<br>
 
 
