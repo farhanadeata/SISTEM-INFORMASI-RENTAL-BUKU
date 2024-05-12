@@ -4,10 +4,6 @@
 
 @section('content')
 
-
-
-    
-
     <div class="my-5" >
         <div class="row">
             @foreach ($books as $item)
