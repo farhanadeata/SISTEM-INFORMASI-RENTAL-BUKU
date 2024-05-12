@@ -31,33 +31,38 @@
         <div class="body-content h-100">
             <div class="row g-0 h-100">
                 <div class="sidebar col-lg-2 collapse d-lg-block" id="navbarSupportedContent">
-
-                    @if (Auth::user()->role_id == 1)
-                        <a href="/dashboard" @if (request()->route()->uri == 'dashboard') class='active' @endif><i
-                                class="bi bi-speedometer"></i> Dashboard</a>
-                        <a href="/books" @if (request()->route()->uri == 'books' ||
-                                request()->route()->uri == 'book-add' ||
-                                request()->route()->uri == 'book-edit' ||
-                                request()->route()->uri == 'book-delete') class='active' @endif><i
-                                class="bi bi-journal"></i> Books</a>
-                        <a href="/categories" @if (request()->route()->uri == 'categories' ||
-                                request()->route()->uri == 'category-add' ||
-                                request()->route()->uri == 'category-edit' ||
-                                request()->route()->uri == 'category-delete') class='active' @endif><i
-                                class="bi bi-list-task"></i> Categories</a>
-                        <a href="/users" @if (request()->route()->uri == 'users' ||
-                                request()->route()->uri == 'registered-users' ||
-                                request()->route()->uri == 'users-detail/{slug}' ||
-                                request()->route()->uri == 'user-delete/{slug}') class='active' @endif><i
-                                class="bi bi-people-fill"></i> Users</a>
-                        <a href="/log" @if (request()->route()->uri == 'log') class='active' @endif><i
-                                class="bi bi-archive"></i> Rent Log</a>
-                        <a href="/logout"><i class="bi bi-box-arrow-left"></i> Logout</a>
-                    @else
-                        <a href="profile"@if (request()->route()->uri == 'profile') class='active' @endif>Profile</a>
-                        <a href="logout">Logout</a>
+                    @if (Auth::User())
+                        @if (Auth::user()->role_id == 1)
+                            <a href="/dashboard" @if (request()->route()->uri == 'dashboard') class='active' @endif><i
+                                    class="bi bi-speedometer"></i> Dashboard</a>
+                            <a href="/books" @if (request()->route()->uri == 'books' ||
+                                    request()->route()->uri == 'book-add' ||
+                                    request()->route()->uri == 'book-edit' ||
+                                    request()->route()->uri == 'book-delete') class='active' @endif><i
+                                    class="bi bi-journal"></i> Books</a>
+                            <a href="/categories" @if (request()->route()->uri == 'categories' ||
+                                    request()->route()->uri == 'category-add' ||
+                                    request()->route()->uri == 'category-edit' ||
+                                    request()->route()->uri == 'category-delete') class='active' @endif><i
+                                    class="bi bi-list-task"></i> Categories</a>
+                            <a href="/users" @if (request()->route()->uri == 'users' ||
+                                    request()->route()->uri == 'registered-users' ||
+                                    request()->route()->uri == 'users-detail/{slug}' ||
+                                    request()->route()->uri == 'user-delete/{slug}') class='active' @endif><i
+                                    class="bi bi-people-fill"></i> Users</a>
+                            <a href="/log" @if (request()->route()->uri == 'log') class='active' @endif><i
+                                    class="bi bi-archive"></i> Rent Log</a>
+                            <a href="/"@if (request()->route()->uri == '/') class='active' @endif><i
+                                class="bi bi-credit-card-2-front"></i> Book list</a>
+                            <a href="/logout"><i class="bi bi-box-arrow-left"></i> Logout</a>
+                        @else
+                            <a href="profile"@if (request()->route()->uri == 'profile') class='active' @endif>Profile</a>
+                            <a href="/"@if (request()->route()->uri == '/') class='active' @endif>Book list</a>
+                            <a href="logout">Logout</a>
                     @endif
-
+                    @else
+                    <a href="login">Login</a>
+                @endif
                 </div>
                 <div class="content p-5 col-lg-10">
                     @yield('content')

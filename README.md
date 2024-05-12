@@ -43,5 +43,7 @@ nama database " rental_buku " (samakan)
 <br>
 7. hal book (Done) 
 <br>
+8. hal book list (ada masalah di bagian menampilkan covernya)
+<br>
 
 

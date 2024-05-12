@@ -21,7 +21,7 @@ class OnlyGuest
         // }
 
         if (auth()->user()) {
-            return redirect('dashboard');
+            return redirect('/');
         }
 
 
