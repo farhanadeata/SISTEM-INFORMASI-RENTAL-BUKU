@@ -1,0 +1,1 @@
+asset('storage/cover/' . $item->cover)
