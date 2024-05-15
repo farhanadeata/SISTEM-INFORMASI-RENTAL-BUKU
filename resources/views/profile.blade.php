@@ -1,9 +1,11 @@
 @extends('layout.mainlayout')
 
-@section('title', 'Profile')
+@section('title', 'Rent Logs User')
 
 @section('content')
-    <P>
-        Lorem ipsum dolor sit
-    </P>
+    <h3>Rent Logs User, {{ Auth::user()->u_name }}</h3>
+
+    <div class="mt-5">
+        <x-rent-log-table :rentlog='$rent_logs' />
+    </div>
 @endsection

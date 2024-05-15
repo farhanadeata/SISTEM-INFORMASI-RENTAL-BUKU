@@ -66,6 +66,12 @@
                 </ul>
             </div>
 
+            <div class="mb-4">
+                <label for="status" class="form=lable">Status</label>
+                <input type="text" name="status" id="status" class="form-control" placeholder="masukan status buku"
+                    value="{{ $book->status }}">
+            </div>
+
             <div class="mt-3">
 
                 <button class="btn btn-success" type="submit">Save</button>

@@ -6,7 +6,7 @@
 
     <h3>Selamat Datang, {{ Auth::user()->u_name }} </h3>
     <div class="row mt-4">
-        <div class="col-lg-4 ">
+        <div class="col-lg-4 col-md-6 mb-3 ">
             <div class="card-data book">
                 <div class="row">
                     <div class="col-6"><i class="bi bi-book"></i></div>
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 ">
+        <div class="col-lg-4 col-md-6 mb-3 ">
             <div class="card-data category">
                 <div class="row">
                     <div class="col-6"><i class="bi bi-list-ul"></i></div>
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 ">
+        <div class="col-lg-4 col-md-6 mb-3">
             <div class="card-data user">
                 <div class="row">
                     <div class="col-6"><i class="bi bi-people"></i></div>
@@ -42,26 +42,10 @@
 
     </div>
 
-    <div class="mt-5">
+    <div class="mt-5  ">
         <H3>#Rent Logs</H3>
-
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>NO</th>
-                    <th>User</th>
-                    <th>Book Title</th>
-                    <th>Rent Date</th>
-                    <th>Return Date</th>
-                    <th>Actual Return Date</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="7" style="text-align:center">No Data</td>
-                </tr>
-            </tbody>
-        </table>
+        <div>
+            <x-rent-log-table :rentlog='$rent_logs' />
+        </div>
     </div>
 @endsection

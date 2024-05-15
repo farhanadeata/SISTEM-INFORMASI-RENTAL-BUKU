@@ -16,7 +16,7 @@ class book extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'book_code', 'title', 'cover', 'slug'
+        'book_code', 'title', 'cover', 'slug','status'
     ];
 
 

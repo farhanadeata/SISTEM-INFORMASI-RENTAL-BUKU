@@ -53,16 +53,20 @@
                             <a href="/log" @if (request()->route()->uri == 'log') class='active' @endif><i
                                     class="bi bi-archive"></i> Rent Log</a>
                             <a href="/"@if (request()->route()->uri == '/') class='active' @endif><i
-                                class="bi bi-credit-card-2-front"></i> Book list</a>
+                                    class="bi bi-credit-card-2-front"></i> Book list</a>
+                            <a href="/book-rent" @if (request()->route()->uri == 'book-rent') class='active' @endif><i
+                                    class="bi bi-bag-plus-fill"></i> Book Rent</a>
+                            <a href="/book-return" @if (request()->route()->uri == 'book-return') class='active' @endif><i
+                                    class="bi bi-alarm"></i> Book Return</a>
                             <a href="/logout"><i class="bi bi-box-arrow-left"></i> Logout</a>
                         @else
-                            <a href="profile"@if (request()->route()->uri == 'profile') class='active' @endif>Profile</a>
+                            <a href="profile"@if (request()->route()->uri == 'profile') class='active' @endif>Rent Log User</a>
                             <a href="/"@if (request()->route()->uri == '/') class='active' @endif>Book list</a>
                             <a href="logout">Logout</a>
-                    @endif
+                        @endif
                     @else
-                    <a href="login">Login</a>
-                @endif
+                        <a href="login">Login</a>
+                    @endif
                 </div>
                 <div class="content p-5 col-lg-10">
                     @yield('content')
