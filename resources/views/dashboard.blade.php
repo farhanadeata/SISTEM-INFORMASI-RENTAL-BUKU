@@ -43,7 +43,7 @@
     </div>
 
     <div class="mt-5  ">
-        <H3>#Rent Logs</H3>
+        <H3>Rent Logs</H3>
         <div>
             <x-rent-log-table :rentlog='$rent_logs' />
         </div>
