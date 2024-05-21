@@ -24,11 +24,12 @@
 <br>
 <h2>DFD</h2>
 <br>
-![image](https://github.com/farhanadeata/proyek-laravel/assets/100106630/0991fb53-59b7-47aa-b069-890b8ff309b2)
+![image](https://github.com/farhanadeata/proyek-laravel/assets/100106630/0991fb53-59b7-47aa-b069-890b8ff309b22)
 <br>
 nama database " rental_buku " (samakan)
 <br>
-<h1>
+SISTEM DONE
+<!-- <h1>
 1.membuat database (done)
 <br>
 2. membuat relasi (done)
@@ -45,6 +46,7 @@ nama database " rental_buku " (samakan)
 <br>
 8. hal book list (ada masalah di bagian menampilkan covernya)
 <br>
-9
+9 -->
+
 
 
