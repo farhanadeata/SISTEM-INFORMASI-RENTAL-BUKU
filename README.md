@@ -73,6 +73,7 @@ SISTEM INFORMASI RENTAL BUKU
 3. dashboard
    ![image](https://github.com/user-attachments/assets/be32b7d6-b27f-4d06-8000-ed25c3634edb)
 
-<p align="center"> <strong>💻 Built with Laravel | Designed with ❤️</strong> </p> ```
+<p align="center"> <strong>💻 Built with Laravel | Designed with ❤️</strong> </p> <br>
+<p align="center"> <a href="https://saweria.co/Farhanadeata" target="_blank"> <img src="https://img.shields.io/badge/Support_on-Saweria-FF5E00?style=for-the-badge&logo=saweria" alt="Saweria"> </a>
 
 
