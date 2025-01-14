@@ -37,5 +37,24 @@ SISTEM INFORMASI RENTAL BUKU
 
 ### Installation  
 
-1. **Clone the repository**:  
- [  git clone https://github.com/farhanadeata/SISTEM-INFORMASI-RENTAl-BUKU](https://github.com/farhanadeata/SISTEM-INFORMASI-RENTAl-BUKU.git)
+1. **Clone the repository**:
+    ```bash 
+    https://github.com/farhanadeata/SISTEM-INFORMASI-RENTAl-BUKU.git
+
+3. **Install dependencies**:
+    composer install
+    npm install
+
+4. **Set up the environment**:
+   cp .env.example .env
+
+5. **Generate the application key**:
+   php artisan key:generate
+
+6. **Run migrations**:
+    php artisan migrate
+
+5. **Start the development server**:
+   php artisan serve
+
+
