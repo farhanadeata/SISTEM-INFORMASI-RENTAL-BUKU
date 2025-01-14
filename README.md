@@ -1,5 +1,19 @@
 SISTEM INFORMASI RENTAL BUKU
 
-![Laravel](https://img.shields.io/badge/Framework-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?style=flat-square&logo=php&logoColor=white)
+<p align="center">
+    <img src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo" width="400">
+</p>
 
+<p align="center">
+    <a href="https://laravel.com">
+        <img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel">
+    </a>
+    <a href="https://www.php.net">
+        <img src="https://img.shields.io/badge/PHP-8.3-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP">
+    </a>
+    <img src="https://img.shields.io/badge/Build-passing-brightgreen?style=flat-square" alt="Build Status">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square" alt="PRs Welcome">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License">
+</p>
+
+---
