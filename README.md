@@ -38,5 +38,4 @@ SISTEM INFORMASI RENTAL BUKU
 ### Installation  
 
 1. **Clone the repository**:  
-   ```bash
  [  git clone https://github.com/farhanadeata/SISTEM-INFORMASI-RENTAl-BUKU](https://github.com/farhanadeata/SISTEM-INFORMASI-RENTAl-BUKU.git)
