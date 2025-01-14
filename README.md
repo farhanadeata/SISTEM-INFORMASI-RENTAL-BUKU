@@ -17,3 +17,26 @@ SISTEM INFORMASI RENTAL BUKU
 </p>
 
 ---
+
+## 🛠️ Tech Stack
+
+| Technology         | Version      | Description                         |
+|--------------------|--------------|-------------------------------------|
+| Laravel            | 11.x         | Backend framework                   |
+| PHP                | 8.3          | Core programming language           |
+| MySQL              | 8.x/14.x     | Database management system          |
+
+
+## 🚀 Quick Start  
+
+### Prerequisites  
+
+- PHP 8.3 or higher  
+- Composer   
+- MySQL
+
+### Installation  
+
+1. **Clone the repository**:  
+   ```bash
+ [  git clone https://github.com/farhanadeata/SISTEM-INFORMASI-RENTAl-BUKU](https://github.com/farhanadeata/SISTEM-INFORMASI-RENTAl-BUKU.git)
