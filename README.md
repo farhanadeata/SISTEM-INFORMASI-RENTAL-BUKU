@@ -1,4 +1,7 @@
-# Laravel 11 Project
+SISTEM INFORMASI RENTAL BUKU
 
-## 📚 Introduction
-This is a [Laravel 11](https://laravel.com/) project. Laravel is a PHP framework for building modern web applications. This README provides instructions on setting up, configuring, and running the project.
+![Laravel](https://img.shields.io/badge/Framework-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?style=flat-square&logo=php&logoColor=white)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)
+![Build Passing](https://img.shields.io/badge/Build-passing-brightgreen?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
