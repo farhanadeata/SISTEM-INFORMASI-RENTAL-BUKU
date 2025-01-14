@@ -42,19 +42,37 @@ SISTEM INFORMASI RENTAL BUKU
     https://github.com/farhanadeata/SISTEM-INFORMASI-RENTAl-BUKU.git
 
 3. **Install dependencies**:
+   ```bash 
     composer install
     npm install
 
-4. **Set up the environment**:
+5. **Set up the environment**:
+   ```bash 
    cp .env.example .env
 
-5. **Generate the application key**:
+7. **Generate the application key**:
+   ```bash 
    php artisan key:generate
 
-6. **Run migrations**:
+9. **Run migrations**:
+    ```bash 
     php artisan migrate
 
 5. **Start the development server**:
+   ```bash 
    php artisan serve
+
+🎨 Screenshots
+
+1. beranda
+   ![image](https://github.com/user-attachments/assets/79423776-ff70-43fa-9e8e-5c76266110cf)
+
+2. login
+   ![image](https://github.com/user-attachments/assets/46b2de90-72fc-49c6-91cc-82af63737116)
+
+3. dashboard
+   ![image](https://github.com/user-attachments/assets/be32b7d6-b27f-4d06-8000-ed25c3634edb)
+
+<p align="center"> <strong>💻 Built with Laravel | Designed with ❤️</strong> </p> ```
 
 
