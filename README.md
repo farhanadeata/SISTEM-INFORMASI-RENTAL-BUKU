@@ -1,4 +1,5 @@
-![Hits](https://hits.dwyl.com/farhanadeata/SISTEM-INFORMASI-RENTAL-BUKU.svg)
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=Farhanadeata/SISTEM-INFORMASI-RENTAL-BUKU.svg" />
+
 
 SISTEM INFORMASI RENTAL BUKU
 
