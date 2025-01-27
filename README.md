@@ -1,4 +1,4 @@
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=Farhanadeata/SISTEM-INFORMASI-RENTAL-BUKU.svg" />
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=Farhanadeata.SISTEM-INFORMASI-RENTAL-BUKU" />
 
 
 SISTEM INFORMASI RENTAL BUKU
