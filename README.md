@@ -1,3 +1,5 @@
+![Hits](https://hits.dwyl.com/farhanadeata/SISTEM-INFORMASI-RENTAL-BUKU.svg)
+
 SISTEM INFORMASI RENTAL BUKU
 
 <p align="center">
